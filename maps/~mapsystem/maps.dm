@@ -43,7 +43,7 @@ var/global/const/MAP_HAS_RANK = 2		//Rank system, also togglable
 	var/ground_noun = "ground"
 
 	// Current game year. Uses current system year + game_year num.
-	var/game_year = 288
+	var/game_year = 448
 
 	/**
 	 * Associative list of network URIs to a list with their display name, color, and "req_access formated" needed access list.
