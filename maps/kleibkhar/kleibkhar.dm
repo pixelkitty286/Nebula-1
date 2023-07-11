@@ -2,6 +2,7 @@
 	// Mods section
 	#include "../../mods/persistence/_persistence.dme"
 	#include "../../mods/species/bayliens/_bayliens.dme"
+	#include "../../mods/species/tajaran/_tajaran.dme"
 	#include "../../mods/species/vox/_vox.dme"
 	#include "../../mods/content/xenobiology/_xenobiology.dme"
 	#include "../chargen/chargen_areas.dm"
