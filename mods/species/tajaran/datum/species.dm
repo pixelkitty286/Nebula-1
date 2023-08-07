@@ -95,8 +95,11 @@
 
 	available_cultural_info = list(
 		TAG_CULTURE = list(
-			/decl/cultural_info/culture/tajaran,
-			/decl/cultural_info/culture/other
+			/decl/cultural_info/culture/tajaran/ethnicity_hharar,
+			/decl/cultural_info/culture/tajaran/ethnicity_zhan,
+			/decl/cultural_info/culture/tajaran/ethnicity_msai,
+			/decl/cultural_info/culture/tajaran/ethnicity_njarir,
+			/decl/cultural_info/culture/tajaran/ethnicity_mixedbreed
 		),
 		TAG_HOMEWORLD = list(
 			/decl/cultural_info/location/adhomai,
