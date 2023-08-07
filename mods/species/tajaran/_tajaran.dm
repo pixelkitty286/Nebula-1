@@ -1,10 +1,5 @@
 #define SPECIES_TAJARA "Tajara"
 #define CULTURE_TAJARA "Tajara"
-#define CULTURE_TAJARA_HHARAR "Hharar"
-#define CULTURE_TAJARA_ZHAN "Zhan"
-#define CULTURE_TAJARA_MSAI "M'sai"
-#define CULTURE_TAJARA_NJARIR "Njarir"
-#define CULTURE_TAJARA_MIXEDBREED "Mixed"
 #define LANGUAGE_SIIKMAAS "Siik'Maas"
 #define LANGUAGE_AKHANI "Akhani"
 #define LANGUAGE_SIIKTAJR "Siik'Tajr"
@@ -19,4 +14,6 @@
 	. = ..(mapload, SPECIES_TAJARA)
 
 /decl/modpack/tajara
-	name = "Aurora.3 & CitRP Tajara Content"
+	name = "CG Purrsistent Tajara Content"
+
+//Huge thanks to Aurora.3 & CitRP for the content used

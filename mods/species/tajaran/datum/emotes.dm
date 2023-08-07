@@ -12,3 +12,8 @@
 	key = "meow"
 	emote_message_3p = "USER mrowls."
 	emote_sound = 'mods/species/tajaran/sound/meow1.ogg'
+
+/decl/emote/audible/mrrp
+	key = "mrrp"
+	emote_message_3p = "USER mrrps"
+	emote_sound = 'mods/species/tajaran/sound/mrrp.ogg'

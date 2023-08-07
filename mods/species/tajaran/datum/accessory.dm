@@ -227,37 +227,42 @@
 	icon_state = "taj_pawsocks"
 	species_allowed = list(SPECIES_TAJARA)
 	body_parts = list(BP_L_FOOT,BP_R_FOOT,BP_L_LEG,BP_R_LEG,BP_L_ARM,BP_R_ARM,BP_L_HAND,BP_R_HAND)
-	blend = ICON_ADD
 
 /decl/sprite_accessory/marking/taj/paw_socks
 	name = "Socks Coloration (Alt)"
 	icon_state = "taj_pawsocks_alternate"
 	body_parts = list(BP_L_FOOT,BP_R_FOOT,BP_L_LEG,BP_R_LEG,BP_L_ARM,BP_R_ARM,BP_L_HAND,BP_R_HAND)
+	flags = HAIR_LOSS_VULNERABLE
 
 /decl/sprite_accessory/marking/taj/belly_hands_feet
 	name = "Hands/Feet/Belly Color (Minor)"
 	icon_state = "taj_bellyhandsfeetsmall"
 	body_parts = list(BP_L_FOOT,BP_R_FOOT,BP_L_LEG,BP_R_LEG,BP_L_ARM,BP_R_ARM,BP_L_HAND,BP_R_HAND,BP_GROIN,BP_CHEST)
+	flags = HAIR_LOSS_VULNERABLE
 
 /decl/sprite_accessory/marking/taj/hands_feet_belly_full
 	name = "Hands/Feet/Belly Color (Major)"
 	icon_state = "taj_bellyhandsfeet"
 	body_parts = list(BP_L_FOOT,BP_R_FOOT,BP_L_LEG,BP_R_LEG,BP_L_ARM,BP_R_ARM,BP_L_HAND,BP_R_HAND,BP_GROIN,BP_CHEST)
+	flags = HAIR_LOSS_VULNERABLE
 
 /decl/sprite_accessory/marking/taj/hands_feet_belly_full_female
 	name = "Hands,Feet,Belly Color (Major, Female)"
 	icon_state = "taj_bellyhandsfeet_female"
 	body_parts = list(BP_L_FOOT,BP_R_FOOT,BP_L_LEG,BP_R_LEG,BP_L_ARM,BP_R_ARM,BP_L_HAND,BP_R_HAND,BP_GROIN,BP_CHEST)
+	flags = HAIR_LOSS_VULNERABLE
 
 /decl/sprite_accessory/marking/taj/patches
 	name = "Color Patches"
 	icon_state = "taj_patches"
 	body_parts = list(BP_L_FOOT,BP_R_FOOT,BP_L_LEG,BP_R_LEG,BP_L_ARM,BP_R_ARM,BP_L_HAND,BP_R_HAND,BP_CHEST,BP_GROIN)
+	flags = HAIR_LOSS_VULNERABLE
 
 /decl/sprite_accessory/marking/taj/patchesface
 	name = "Color Patches (Face)"
 	icon_state = "taj_patchesface-head"
 	mask_to_bodypart = FALSE
+	flags = HAIR_LOSS_VULNERABLE
 
 /decl/sprite_accessory/marking/taj/tiger_stripes
 	name = "Tiger Stripes"
@@ -268,21 +273,25 @@
 	name = "Tiger Stripes (Head, Minor)"
 	icon_state = "tigerhead"
 	body_parts = list(BP_HEAD)
+	flags = HAIR_LOSS_VULNERABLE
 
 /decl/sprite_accessory/marking/taj/tigerface
 	name = "Tiger Stripes (Head, Major)"
 	icon_state = "tigerface"
 	body_parts = list(BP_HEAD)
+	flags = HAIR_LOSS_VULNERABLE
 
 /decl/sprite_accessory/marking/taj/belly
 	name = "Belly Fur (Taj)"
 	icon_state = "taj_belly-chest"
 	body_parts = list(BP_CHEST)
+	flags = HAIR_LOSS_VULNERABLE
 
 /decl/sprite_accessory/marking/taj/bellyfull
 	name = "Belly Fur Wide (Taj)"
 	icon_state = "taj_bellyfull-chest"
 	body_parts = list(BP_CHEST)
+	flags = HAIR_LOSS_VULNERABLE
 
 /decl/sprite_accessory/marking/taj/earsout
 	name = "Outer Ear (Taj)"
@@ -308,11 +317,13 @@
 	name = "Muzzle Color (Taj)"
 	icon_state = "taj_muzzle-head"
 	mask_to_bodypart = FALSE
+	flags = HAIR_LOSS_VULNERABLE
 
 /decl/sprite_accessory/marking/taj/muzzlef
 	name = "Muzzle Color Female (Taj)"
 	icon_state = "taj_muzzle_female-head"
 	mask_to_bodypart = FALSE
+	flags = HAIR_LOSS_VULNERABLE
 
 /decl/sprite_accessory/marking/taj/face
 	name = "Cheeks Color (Taj)"
@@ -323,6 +334,7 @@
 	name = "All Taj Head (Taj)"
 	icon_state = "taj_all-head"
 	body_parts = list(BP_HEAD)
+	flags = HAIR_LOSS_VULNERABLE
 
 /decl/sprite_accessory/marking/taj/earslynx
 	name = "Lynx Ear (Taj)"
@@ -339,13 +351,12 @@
 	icon_state = "taj_lynxcheeks-head"
 	mask_to_bodypart = FALSE
 
-/*
-//Uncomment when fixed
+//stupid boo boo fix
 /decl/sprite_accessory/marking/taj/heterochromia
-	name = "Heterochromia (Taj)"
-	icon_state = "taj_heterochromia"
+	name = "Heterochromia (Left eye) (Taj)"
+	icon_state = "taj_heterochromia-eyes"
 	species_allowed = list(SPECIES_TAJARA)
-	body_parts = list(BP_EYES)
+	mask_to_bodypart = FALSE
 	blend = ICON_MULTIPLY
-*/
+
 //Skin

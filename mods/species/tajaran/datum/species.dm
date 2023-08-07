@@ -4,11 +4,11 @@
 		"a toddler" =       3,
 		"a child" =         7,
 		"an adolescent" =  13,
-		"a young adult" =  16,
-		"an adult" =       18,
+		"a young adult" =  18,
+		"an adult" =       30,
 		"middle-aged" =    45,
 		"aging" =          60,
-		"elderly" =       90
+		"elderly" =       85
 	)
 
 /decl/species/tajara
@@ -21,12 +21,7 @@
 
 	description = "The Tajara are a race of humanoids that possess markedly felinoid traits that include \
 	 a semi-prehensile tail, a body covered in fur of varying shades, and padded, digitigrade feet. \
- 	 They are a naturally superstitious species, with the new generations growing up with tales of the struggles of surviving a great ice age. \
-	 This spirit has led them forward to the reconstruction and advancement of their society to what they are today.\
-	 Their pride for the struggles they went through is heavily tied to their spiritual beliefs.\
-	 Recent discoveries have jump started the progression of highly advanced cybernetic technology, causing a culture shock within Tajaran society."
-
-
+ 	 They are a naturally superstitious species, being that they are from a harsh and icy cold planet."
 
 	hidden_from_codex = FALSE
 
@@ -39,7 +34,7 @@
 
 	preview_outfit = /decl/hierarchy/outfit/job/generic/engineer
 
-	spawn_flags = SPECIES_CAN_JOIN
+	spawn_flags = SPECIES_CAN_JOIN | SPECIES_IS_WHITELISTED //Whitelisted because you MUST have a basic understanding on the lore
 	appearance_flags = HAS_HAIR_COLOR | HAS_LIPS | HAS_UNDERWEAR | HAS_SKIN_COLOR | HAS_EYE_COLOR
 
 	blood_types = list(
@@ -62,13 +57,15 @@
 
 	organs_icon = 'mods/species/tajaran/icons/organs.dmi'
 
-	darksight_range = 7 //oh god old darksight
+	darksight_range = 7
 	slowdown = -0.5
+	snow_slowdown_mod = -1
 	flash_mod = 2
 
-	//I am so nerfing them as much as cit taj
 	hunger_factor = DEFAULT_HUNGER_FACTOR * 1.2
 	gluttonous = GLUT_TINY
+
+//TODO: Add a unarmed claws attack tajara have claws!
 
 	unarmed_attacks = list(
 		/decl/natural_attack/stomp,
@@ -96,18 +93,14 @@
 		"Your overheated skin itches."
 	)
 
-	//TODO: can we add more stuff?
 	available_cultural_info = list(
 		TAG_CULTURE = list(
-			/decl/cultural_info/culture/tajaran/ethnicity_hharar,
-			/decl/cultural_info/culture/tajaran/ethnicity_zhan,
-			/decl/cultural_info/culture/tajaran/ethnicity_msai,
-			/decl/cultural_info/culture/tajaran/ethnicity_njarir,
-			/decl/cultural_info/culture/tajaran/ethnicity_mixedbreed
+			/decl/cultural_info/culture/tajaran,
+			/decl/cultural_info/culture/other
 		),
 		TAG_HOMEWORLD = list(
 			/decl/cultural_info/location/adhomai,
-			/decl/cultural_info/location/spacer
+			/decl/cultural_info/location/other
 		)
 	)
 
@@ -121,12 +114,17 @@
 		/decl/emote/human/stopsway,
 		/decl/emote/audible/purr,
 		/decl/emote/audible/purrlong,
-		/decl/emote/audible/meow
+		/decl/emote/audible/meow,
+		/decl/emote/audible/mrrp
 	)
 
 	//Autohiss
 	autohiss_basic_map = list(
 		"r" = list("rr", "rrr", "rrrr")
+	)
+
+	autohiss_extra_map = list(
+		"m" = list("mr", "mrr", "mrrr")//you play like a cat mrrp mrp meow!
 	)
 
 	autohiss_exempt = list(

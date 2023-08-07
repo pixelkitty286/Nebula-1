@@ -45,7 +45,7 @@ var/global/const/MAP_HAS_RANK = 2		//Rank system, also togglable
 	var/default_announcement_frequency = "Common"
 
 	// Current game year. Uses current system year + game_year num.
-	var/game_year = 448
+	var/game_year = 288
 
 	/**
 	 * Associative list of network URIs to a list with their display name, color, and "req_access formated" needed access list.

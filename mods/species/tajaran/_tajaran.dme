@@ -12,4 +12,5 @@
 //#include "datum/faction.dm"
 //#include "datum/religion.dm"
 #include "datum/location.dm"
+#include "clothing.dm"
 #endif
